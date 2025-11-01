@@ -7,17 +7,19 @@ elif score >=60:
 else:
     print("불합격입니다.")
 
-if score > 100 or score < 0:
+if score < 100 or score > 0:
     print("정상적인 점수 범위가 아닙니다.")
 
    # while True:
     #    user_input = input("값을 입력하세요 : ")
 
-#if user_input.lower() == "z"
- #   break
+#        if user_input.lower() == "z"
+#            break
 input_number = int(input("숫자를 입력하세요. "))
 index = 1
 
 while index <= input_number:
     print(index)
-    index = index + 1
+    if index % 2 == 0:
+    print(index)
+    index = index + 2
