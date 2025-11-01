@@ -21,7 +21,7 @@ index = 1
 while index <= input_number:
     print(index)
     if index % 2 == 0:
-    print(index)
+      print(index)
     index = index + 2
 
     print("피보나치 수열")
@@ -29,8 +29,8 @@ while index <= input_number:
 
     while list[len(list)-1] < input_number:
        print(list_item)
-        list.append(list_item + list[len(list)-2])
-       list_item = list[len(list)-1]
+    list.append(list_item + list[len(list)-2])
+    list_item = list[len(list)-1]
 
 print("피보나치 수열 without list")
 a = 1
