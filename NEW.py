@@ -31,3 +31,14 @@ while index <= input_number:
        print(list_item)
         list.append(list_item + list[len(list)-2])
        list_item = list[len(list)-1]
+
+print("피보나치 수열 without list")
+a = 1
+b = 1
+c = 1
+
+while c <= input_number:
+    print(c)
+    c = a + b
+    a = b
+    b = c
