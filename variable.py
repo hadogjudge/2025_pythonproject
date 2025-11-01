@@ -34,3 +34,5 @@ print(list_example[1])
 
 #변할수 있는 데이터는 key값으로 사용 불가능
 dict_example =
+
+print ;
