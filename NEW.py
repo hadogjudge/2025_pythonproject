@@ -1,3 +1,5 @@
+from timeit import repeat
+
 score = int(input("점수를 입력하세요."))
 
 if score >=  80:
@@ -42,3 +44,23 @@ while c <= input_number:
     c = a + b
     a = b
     b = c
+def print_even():
+
+
+#repeat_function()
+arr = ['AA' , 'BB' , 'CC' , 'DD']
+
+for i in  arr:
+    print(i)
+
+test = [{'answer': [1,3,2,4,5,1,2,3,4]},
+{'answer': [1,1,1,1,1,1,1,1,1]},
+{'answer': [1,4,2,3,5,2,4,3,2]},
+{'answer': [1,3,2,4,5,1,2,3,4]},
+{'answer': [1,4,2,4,4,2,1,3,4]},
+{'answer': [3,4,2,2,1,4,3,5,4]},]
+a =  [1,3,2,4,5,1,2,3,4]
+correct_answer = [1,3,2,4,5,1,2,3,4]
+for (student, correct) in zip(a, correct_answer):
+    print(student , '/' , correct)
+
