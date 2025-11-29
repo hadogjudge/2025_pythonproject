@@ -33,3 +33,30 @@ def up_down_game():
 
 
 up_down_game()
+
+
+import random
+
+
+word_dict = {
+    "Apple": "사과",
+    "Banana": "바나나",
+    "Grapes": "포도",
+    "Orange": "오렌지",
+    "Melon": "멜론",
+    "Pear": "배",
+    "Peach": "복숭아",
+    "Watermelon": "수박",
+    "Strawberry": "딸기",
+    "Pineapple": "파인애플"
+}
+
+# 객관식 문제를 위한 선택지 준비
+def generate_choices(correct_answer, word_dict):
+    choices = [correct_answer]
+    while len(choices) < 4:
+        random_word = random.choice(list(word_dict.values()))
+        if random_word not in choices:
+            choices.append(random_word)
+    random.shuffle(choices)
+    return choice
